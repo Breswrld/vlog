@@ -1,22 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="VLOG.css">
 
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">BRE<span>@</span></div>
+        <div class="nav-links">
+            <a href="https://breswrld.github.io/dreamer.com/">Home</a>
+            <a href="https://breswrld.github.io/vlog/">Vlog</a>
+            <a href="https://breswrld.github.io/coverpage.com/">About</a>
+        </div>
+        <div class="links">
+            <a href="https://www.instagram.com/b.r.e.the_greatest/?utm_source=ig_embed"><i class="fa-brands fa-square-instagram fa-xl"> </i></a>
+            <a href="https://profile.indeed.com/p/brehannas-nqhn56w" ><i class="fa-brands fa-linkedin fa-xl"></i></a>
+            </nav></div> 
+    </div>
+    <div class="video-container">
+        <video controls>
+            <source src="Networking.mp4" type="video/mp4">
+        </video>
+        <div class="paragraph">
+            <div class="animated-border"></div>
+            <p>
+                I discovered what networking means to me through investigation. I want people to realize that networking doesn't have to be artificial and fake all the time. Therefore I made the decision to outline my networking candidates in case I ever needed assistance. Through my explanation in the video, I hoped to educate my audience and express my gratitude to those who have helped me during the semester. I plan to meet others who work in the same profession as me because my aim is to become an entrepreneur in the fashion industry. I'm not advocating that you seek out influential individuals; rather, I believe that people ought to be treated with kindness and without anticipating anything in return. Since there are a lot of coincidences in this world, I believe it is amazing to let things unfold naturally without intervening.
+            </p>
+        </div>
+</div>
+<div class="circle-container">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+</div>
+
+
+</body>
+</html>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
 
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;  
-    color: #f3f5f8;
+    color:#f3f5f8;
 }
-
 .navbar {
     display: flex;
-    flex-direction: column; /* Stack items vertically on small screens */
+    justify-content: flex-start; /* Align items to the start */
     align-items: center;
     background-color: #f3f5f8;
     padding: 10px 20px;
     margin: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 .logo {
     display: flex;
     align-items: center;
@@ -27,84 +68,71 @@ body {
     font-size: 20px;
     font-weight: 800;
 }
-
 .logo span {
     color: #4eb3e2;
     font-size: 35px;
 }
-
 .nav-links {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping on small screens */
-    justify-content: center; /* Center links */
-    margin: 10px 0; /* Add some margin */
+    margin-left: 90px; /* Space between logo and nav links */
 }
-
 .nav-links a {
     color: #3d535f;
     letter-spacing: 3px;
     text-decoration: none;
     text-transform: capitalize;
-    margin: 0 10px; /* Space between links */
+    margin-right: 120px; /* Space between links */
     transition: color 0.3s;
 }
-
 .nav-links a:hover {
     color: #4eb3e2;
 }
-
 .links {
     display: flex;
     gap: 10px;
     margin-left: auto; /* Push icons to the right */
 }
 
-.links a:hover {
-    color: #4eb3e2;
+.links a:hover {color: #4eb3e2;
 }
-
 .links a {
-    color: #3d535f;
-}
-
+color: #3d535f;}
 .content {
     margin-top: 20px;
     display: flex;
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center content */
-    background-color: #f3f5f8;
+    align-items: flex-start;
+    background-color:#f3f5f8;
 }
-
 .video-container {
     display: flex;
-    flex-direction: column; /* Stack video and paragraph */
-    align-items: center;
+    align-items: flex-start;
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
 }
 
 video {
-    width: 100%; /* Full width on small screens */
-    max-width: 600px; /* Limit max width */
-    margin: 20px 0; /* Add margin */
+    width: 50%;
+    margin-right: 20px;
+    margin-left: 20px;
     border: inset 5px #ccc;
 }
+
 
 .paragraph {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     line-height: 2em;
-    width: 90%; /* Full width on small screens */
-    text-indent: 0; /* Remove indent on small screens */
+    width: 50%;
+    text-indent: 35px;
     border-radius: 10px;
     padding: 20px;
     background-color: #f3f5f8;
     color: black;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
+    
 }
-
 .animated-border {
     position: absolute;
     top: -10px;
@@ -116,20 +144,17 @@ video {
     animation: border-animation 2s infinite;
     z-index: -1; /* Place behind the paragraph */
 }
-
 @keyframes border-animation {
     0% { border-color: rgba(26, 25, 25, 0); }
-    50% { border-color: #4eb3e2; }
-    70% { border-color: #b0c6e3; }
+    50%{ border-color: #4eb3e2;}
+    70%{ border-color: #b0c6e3;}
     100% { border-color: rgba(0, 0, 0, 0); }
 }
-
 .circle-container {
     display: flex;
     justify-content: center;
     margin-top: 40px;
 }
-
 .circle {
     width: 30px;
     height: 30px;
@@ -137,32 +162,72 @@ video {
     margin: 0 10px;
     animation: bounce 1.5s infinite alternate;
 }
-
 .circle:nth-child(1) { background-color: #4eb3e2; animation-delay: 0s; }
 .circle:nth-child(2) { background-color: #3d535f; animation-delay: 0.3s; }
 .circle:nth-child(3) { background-color: #e5b9fa; animation-delay: 0.6s; }
 .circle:nth-child(4) { background-color: #4eb3e2; animation-delay: 0.9s; }
-
 @keyframes bounce {
     to { transform: translateY(-20px); }
 }
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .navbar {
-        flex-direction: column; /* Stack navbar items */
+        flex-direction: column;
+        padding: 15px;
     }
 
     .nav-links {
-        flex-direction: column; /* Stack nav links */
-        align-items: center; /* Center links */
+        margin: 15px 0;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+    }
+
+    .links {
+        margin: 10px 0;
     }
 
     .video-container {
-        flex-direction: column; /* Stack video and paragraph */
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    video {
+        width: 100%;
+        margin: 0 0 20px 0;
     }
 
     .paragraph {
-        width: 100%; /* Full width on small screens */
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+}
+
+/* For even smaller screens */
+@media screen and (max-width: 480px) {
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .paragraph {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .circle {
+        width: 20px;
+        height: 20px;
     }
 }
