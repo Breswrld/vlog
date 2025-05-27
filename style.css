@@ -1,0 +1,332 @@
+/* --- Google Fonts Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&family=Dancing+Script&display=swap');
+
+/* --- CSS Reset --- */
+body, header, nav, main, footer, img, h1, h3, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    background-color: #f3f5f8;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+	 overflow-x: hidden;
+}
+
+
+
+/* --- Navigation Styles --- */
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px; /* Reduced right padding */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f3f5f8;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Prevent overflow */
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    color: #3d535f;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+b {
+    color: #4eb3e2;
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navItems {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-grow: 1.5; /* Take up available space */
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* prevent navItems overflow */
+    padding: 0;
+}
+
+.navItems li {
+    margin: 0 45px;
+}
+
+.navItems li a {
+    text-decoration: none;
+    color: #3d535f;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-right: 40px;
+    transition: color 0.3s;
+	 letter-spacing: 3px;
+	
+}
+
+.navItems li a:hover {
+    color: #4eb3e2;
+}
+
+.navItems li a:active {
+    color: darkblue;
+}
+
+.links {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align icons to the right */
+    padding-right: 40px; /* Added right padding */
+}
+
+.links a {
+    margin: 0 10px;
+    color: #333;
+}
+
+.links a i {
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 22px;
+    margin: 0 5px;
+    color: #333;
+    vertical-align: middle;
+}
+
+.links a i:hover {
+    color: #4eb3e2;
+}
+
+.links a i:active {
+    color: darkblue;
+}
+
+
+
+.paragraph {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    width: 70%;
+     margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f3f5f8;
+    color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: center;
+    
+}
+    .video-container {
+     display: flex;
+	   position: relative;
+       flex-direction: column;
+        margin: 90px auto 0 auto; /* Adds space above the video */
+        width: 80%;
+		
+    }
+
+    video {
+     width: 80%;
+    margin-bottom: 20px; /* space between video and paragraph */
+    border-radius: 10px;
+	 margin: 0 auto 20px auto; /* top: 0, horizontal: auto (centers), bottom: 20px */
+    display: block; 
+    }
+
+
+
+
+.video-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* default for mobile */
+}
+
+.video-wrapper video {
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+	
+}
+
+.curly-arrow-formal {
+    position: absolute;
+    top: 120px; /* Adjust as needed */
+    left: 100%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: auto;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+  .sticker {
+      position: absolute;
+      top: -30px;
+      left: 0%;
+      transform: translateX(-50%) rotate(-5deg);
+      background: #a9bcd0;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      font-weight: bold;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+      border: 2px dashed #f3f5f8;
+      color: #333c4f;
+    }
+
+
+
+
+
+
+
+
+
+
+/* --- Mobile Styles --- */
+@media screen and (max-width: 900px) {
+
+   
+   header {
+        display: block;
+        width: 100%;
+        height: 80px;
+        background-color: lightblue;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+    }
+.mobile-welcome-section {
+	display: block;
+}
+   
+     nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+		max-width: 300px;
+        width: 80%;
+        height: 100vh;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #f3f5f8;
+        z-index: 1000;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+
+    .nav-wrapper {
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    .navItems {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .navItems li {
+        text-align: left;
+        margin: 10px 0;
+	    width: 100%;
+        padding: 15px 20px;
+    }
+.navItems li a {
+    font-size: 18px;
+    display: block;
+    width: 100%;
+}
+    .links {
+        display: none;
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000; /* Higher z-index */
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        background: none;
+        border: none;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1001; /* Lower z-index */
+    }
+
+   nav.active + .overlay {
+        display: block;
+    }
+
+    nav.active + .overlay + .hamburger {
+        display: none;
+    }
+	 nav.active {
+        transform: translateX(0);
+    }
+	nav.active ~ .hamburger{ /*This is the change*/
+        display: none;
+    }
+   .paragraph {
+	width: 80%;
+	font-size: 13px;
+   }
+   video {
+     width: 100%;
+  }
+  .video-wrapper video {
+    width: 100%;
+}
+.curly-arrow-formal {
+    position: absolute;
+    top: -40px; /* Adjust as needed */
+    left: 110%;
+	 width: 160px;
+}
+.sticker {
+	display: none;
+}
+}
+/* --- Tablet Styles ---- */
+@media (min-width: 769px) and (max-width: 1090px)  {
+ .sticker {
+       font-size: 14px;
+    padding: 6px 14px;
+    top: -20px;
+}
+.video-wrapper video {
+     width: 70%;
+}
+}
