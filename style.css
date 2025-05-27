@@ -312,6 +312,13 @@ b {
 .sticker {
 	display: none;
 }
+.hamburger.hide {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
 }
 /* --- Tablet Styles ---- */
 @media (min-width: 769px) and (max-width: 1090px)  {
