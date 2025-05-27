@@ -251,13 +251,7 @@ b {
     .navItems li {
         text-align: left;
         margin: 10px 0;
-	    width: 100%;
-        padding: 15px 20px;
     }
-.navItems li a {
-    font-size: 18px;
-    display: block;
-    width: 100%;
 }
     .links {
         display: none;
