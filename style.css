@@ -110,7 +110,7 @@ b {
 .links a i:active {
     color: darkblue;
 }
-
+  
 
 
 .paragraph {
@@ -224,8 +224,7 @@ b {
         position: fixed;
         top: 0;
         left: 0;
-		max-width: 300px;
-        width: 80%;
+        width: 30%;
         height: 100vh;
         flex-direction: column;
         align-items: flex-start;
@@ -296,7 +295,7 @@ b {
 	 nav.active {
         transform: translateX(0);
     }
-	nav.active ~ .hamburger{ /*This is the change*/
+	nav.active  ~ .hamburger{ /*This is the change*/
         display: none;
     }
    .paragraph {
