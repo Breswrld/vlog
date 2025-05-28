@@ -321,7 +321,7 @@ b {
 
 }
 /* --- Tablet Styles ---- */
-@media (min-width: 769px) and (max-width: 1090px)  {
+@media (min-width: 769px) and (max-width: 1023px)  {
  .sticker {
        font-size: 14px;
     padding: 6px 14px;
