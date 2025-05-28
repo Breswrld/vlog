@@ -182,7 +182,7 @@ b {
 
   .sticker {
       position: absolute;
-      top: -30px;
+      top: -20px;
       left: 0%;
       transform: translateX(-50%) rotate(-5deg);
       background: #a9bcd0;
@@ -333,7 +333,7 @@ b {
 }
 @media (min-width: 1025px) {
 	.video-wrapper video {
-    width: 80%;
+    width: 70%;
 }
 .paragraph {
 	width: 70%;
