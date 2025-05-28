@@ -331,3 +331,13 @@ b {
      width: 70%;
 }
 }
+@media (min-width: 1025px) {
+	.video-wrapper video {
+    width: 70%;
+}
+.paragraph {
+	width: 70%;
+	font-size: 25px;
+}
+}
+
