@@ -182,7 +182,7 @@ b {
 
   .sticker {
       position: absolute;
-      top: -20px;
+      top: 20px;
       left: 0%;
       transform: translateX(-50%) rotate(-5deg);
       background: #a9bcd0;
