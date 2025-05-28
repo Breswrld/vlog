@@ -345,5 +345,12 @@ b {
 	.hamburger {
 		display: none;
 	}
+	.curly-arrow-formal {
+   `
+    top: 120px; /* Adjust as needed */
+    left: 100%;
+    transform: translateX(-50%);
+    width: 300px;
+}
 }
 
