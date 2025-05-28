@@ -333,11 +333,14 @@ b {
 }
 @media (min-width: 1025px) {
 	.video-wrapper video {
-    width: 70%;
+    width: 80%;
 }
 .paragraph {
 	width: 70%;
-	font-size: 15px;
+	font-size: 14px;
 }
+	.sticker {
+		display: block;
+	}
 }
 
