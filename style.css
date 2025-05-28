@@ -131,7 +131,7 @@ b {
      display: flex;
 	   position: relative;
        flex-direction: column;
-        margin: 90px auto 0 auto; /* Adds space above the video */
+        margin: 100px auto 0 auto; /* Adds space above the video */
         width: 80%;
 		
     }
