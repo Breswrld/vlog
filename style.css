@@ -330,6 +330,9 @@ b {
 .video-wrapper video {
      width: 70%;
 }
+	 .hamburger {
+        display: none;
+	 }
 }
 @media (min-width: 1025px) {
 	.video-wrapper video {
